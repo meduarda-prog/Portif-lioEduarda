@@ -47,21 +47,29 @@ body::before {
   100% { transform: translateX(20px); }
 }
 
-/* Hero */
+/* HERO */
 .hero {
+  height: 100vh;
   padding: 80px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;    
+  text-align: center;      
+  position: relative;      
 }
 
 .foto {
   width: 150px;
-  heigt:150px;
+  height: 150px;   
   border-radius: 50%;
   border: 3px solid #00f7ff;
   margin-bottom: 20px;
-  transition:0.3s;
+  transition: 0.3s;
 }
-.foto:houver {
-   transform: scale(1.05);
+
+.foto:hover {      
+  transform: scale(1.05);
 }
 h1 {
   font-size: 28px;
@@ -197,18 +205,11 @@ html {
   margin-bottom: 10px;
 }
 
-/* HERO ocupar tela inteira */
-.hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* SCROLL */
 .scroll {
   position: absolute;
   bottom: 40px;
+  left: 50%;                     
+  transform: translateX(-50%);   
   font-size: 12px;
   letter-spacing: 4px;
   color: #aaa;
