@@ -53,12 +53,16 @@ body::before {
 }
 
 .foto {
-  width: 160px;
+  width: 150px;
+  heigt:150px;
   border-radius: 50%;
-  border: 4px solid #00aaff;
+  border: 3px solid #00f7ff;
   margin-bottom: 20px;
+  transition:0.3s;
 }
-
+.foto:houver {
+   transform: scale(1.05);
+}
 h1 {
   font-size: 28px;
 }
