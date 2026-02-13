@@ -237,3 +237,15 @@ html {
   background: #00aaff;
   color: black;
 }
+.light-mode {
+  background: white;
+  color: black;
+}
+
+.light-mode .menu {
+  background: rgba(255,255,255,0.8);
+}
+
+.light-mode .skills span {
+  border: 1px solid black;
+}
