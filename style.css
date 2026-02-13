@@ -220,24 +220,6 @@ html {
   padding: 60px 20px;
 }
 
-.skills {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.skills span {
-  padding: 10px 20px;
-  border: 1px solid #00aaff;
-  border-radius: 20px;
-  transition: 0.3s;
-}
-
-.skills span:hover {
-  background: #00aaff;
-  color: black;
-}
 .light-mode {
   background: white;
   color: black;
@@ -249,4 +231,44 @@ html {
 
 .light-mode .skills span {
   border: 1px solid black;
+}
+/* ACCORDION HABILIDADES */
+
+.accordion {
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.accordion-item {
+  margin-bottom: 15px;
+}
+
+.accordion-btn {
+  width: 100%;
+  padding: 15px;
+  background: none;
+  border: 1px solid #00aaff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.accordion-btn:hover {
+  background: #00aaff;
+  color: black;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background: rgba(255,255,255,0.05);
+  padding: 0 15px;
+}
+
+.accordion-content p {
+  padding: 15px 0;
+  color: #ccc;
 }
