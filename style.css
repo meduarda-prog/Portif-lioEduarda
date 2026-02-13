@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: black;
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* 🌌 Fundo Estrelado */
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+  opacity: 0.15;
+  z-index: -2;
+}
+
+/* 🌊 Aurora Boreal Azul */
+.aurora {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(0, 119, 255, 0.2),
+    rgba(0, 255, 255, 0.1),
+    transparent
+  );
+  animation: auroraMove 8s infinite alternate;
+  z-index: -1;
+}
+
+@keyframes auroraMove {
+  0% { transform: translateX(-20px); }
+  100% { transform: translateX(20px); }
+}
+
+/* Hero */
+.hero {
+  padding: 80px 20px 40px;
+}
+
+.foto {
+  width: 160px;
+  border-radius: 50%;
+  border: 4px solid #00aaff;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-weight: 300;
+  color: #00aaff;
+  margin: 10px 0 20px;
+}
+
+.contato a {
+  margin: 0 12px;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.contato a:hover {
+  color: #00aaff;
+}
+
+.resumo {
+  max-width: 600px;
+  margin: 20px auto;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Projetos */
+#projetos {
+  padding: 60px 20px;
+}
+
+#projetos h2 {
+  margin-bottom: 30px;
+  color: #00aaff;
+}
+
+.projeto-destaque {
+  border: 2px solid #00aaff;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.projeto-destaque:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00aaff;
+}
+
+.projeto-destaque a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #00aaff;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Sobre */
+#sobre {
+  padding: 60px 20px;
+  max-width: 700px;
+  margin: auto;
+}
