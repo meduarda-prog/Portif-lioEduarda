@@ -272,3 +272,10 @@ html {
   padding: 15px 0;
   color: #ccc;
 }
+.light-mode .menu a {
+  color: black;
+}
+
+.light-mode .menu button {
+  color: black;
+}
